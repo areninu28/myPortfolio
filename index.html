@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen's AI, ML, & Automation Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Allen, a Computer Engineering student specializing in AI, ML, and n8n automation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <span class="eyebrow">PREPARING...</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <div class="paper-overlay"></div>
+
+    <main id="portfolio-container">
+        <!-- Section 1: Hero -->
+        <section id="hero" class="snap-section">
+            <div class="content">
+                <div class="title-wrapper">
+                    <span class="eyebrow fade-in">ALLEN'S</span>
+                    <h1 class="split-text">AI, ML, <br><span class="highlight">AUTOMATION</span><br>PORTFOLIO</h1>
+                    <svg class="sketchy-loop" viewBox="0 0 500 200">
+                        <path d="M40,100 Q150,20 250,100 T460,100" />
+                    </svg>
+                </div>
+            </div>
+            <div class="decoration doodle-1">
+                <svg viewBox="0 0 100 100" width="150" height="150">
+                    <path d="M10,50 Q30,10 50,50 T90,50" stroke="#ff8c00" stroke-width="4" fill="none" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Section 2: About -->
+        <section id="about" class="snap-section">
+            <div class="container grid">
+                <div class="polaroid-wrapper">
+                    <div class="polaroid">
+                        <img src="canva/2.jpg" alt="Allen" class="polaroid-img">
+                        <div class="star-sticker"></div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2>HELLO, I'M <span class="highlight-orange">ALLEN</span></h2>
+                    <p>A Computer Engineering student majoring in Artificial Intelligence, specializing in software
+                        development, FastAPI backends, and n8n workflow automation. My focus is turning ideas into
+                        intelligent systems that work quietly behind the scenes, allowing you to focus on what truly
+                        matters.</p>
+                </div>
+            </div>
+            <div class="decoration squiggle-1"></div>
+        </section>
+
+        <!-- Section 3: Skills -->
+        <section id="skills" class="snap-section">
+            <div class="container">
+                <h2 class="section-title">MY <span class="highlight-orange">SKILLS</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>SOFTWARE DEVELOPMENT</h3>
+                        <p>Focusing on backend logic and efficient algorithm design:</p>
+                        <ul>
+                            <li><strong>Python:</strong> Proficient in building scalable applications, particularly for
+                                AI/ML and Computer Vision.</li>
+                            <li><strong>C++:</strong> Experienced in high-performance programming and core software
+                                principles.</li>
+                            <li><strong>JavaScript:</strong> Capable of developing dynamic web solutions and integrating
+                                APIs.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>ANDROID APPLICATION DEVELOPMENT</h3>
+                        <p>Mobile-first solutions built within the Android Studio ecosystem:</p>
+                        <ul>
+                            <li>Skilled in designing responsive <strong>User Interfaces (UI)</strong> and ensuring
+                                smooth <strong>User Experiences (UX)</strong>.</li>
+                            <li>Experience managing app lifecycles, local storage, and third-party API integrations.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>N8N WORKFLOW AUTOMATION</h3>
+                        <p>Streamlining complex processes through low-code/no-code logic:</p>
+                        <ul>
+                            <li>Designing automated pipelines that connect diverse services like Google Drive, Supabase,
+                                Qdrant, and various LLM APIs.</li>
+                            <li>Building <strong>RAG-capable</strong> AI agents to automate data retrieval and response
+                                generation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Projects Title -->
+        <section id="projects-intro" class="snap-section center-content">
+            <div class="title-wrapper-large">
+                <span class="eyebrow">ALLEN'S</span>
+                <h1>PROJECTS</h1>
+                <div class="sketchy-circle-large"></div>
+            </div>
+        </section>
+
+        <!-- Section 5: Project 1 -->
+        <section id="project-1" class="snap-section project-section">
+            <div class="container grid">
+                <div class="text-content">
+                    <div class="project-header">
+                        <span class="project-num">PROJECT <span class="circle-num">1</span></span>
+                        <h2>N8N RAG</h2>
+                    </div>
+                    <p>A streamlined <strong>Retrieval-Augmented Generation (RAG)</strong> workflow built in
+                        <strong>n8n</strong>. This system features an intelligent AI chat agent capable of answering
+                        user queries based on custom documents.
+                    </p>
+                    <ul class="project-features">
+                        <li><strong>Document Ingestion Pipeline:</strong> Manually triggered to download files from
+                            Google Drive and index them into Supabase.</li>
+                        <li><strong>Conversational AI Agent:</strong> Powered by OpenAI, retrieves relevant information
+                            from the vector store.</li>
+                        <li><strong>Persistent Context:</strong> Uses Postgres Chat Memory for multi-turn chat
+                            experience.</li>
+                    </ul>
+                </div>
+                <div class="visual-content">
+                    <div class="video-container">
+                        <video controls poster="canva/5.jpg">
+                            <source src="assets/n8n.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="tech-gallery">
+                        <div class="tech-item">
+                            <p>Walkthrough</p><img src="canva/6.jpg" alt="n8n walkthrough">
+                        </div>
+                        <div class="tech-item">
+                            <p>Database</p><img src="canva/7.jpg" alt="Supabase database">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Project 2 -->
+        <section id="project-2" class="snap-section project-section">
+            <div class="container grid">
+                <div class="text-content">
+                    <div class="project-header">
+                        <span class="project-num">PROJECT <span class="circle-num">2</span></span>
+                        <h2>FACUL-TRACK</h2>
+                        <span class="subtitle"><strong>AI-Driven Biometric Access Control</strong></span>
+                    </div>
+                    <p>An intelligent security system leveraging <strong>Deep Learning</strong> to automate laboratory
+                        access at Batangas State University. Features on-device facial recognition using <strong>FaceNet
+                            TensorFlow Lite</strong>.</p>
+                    <ul class="project-features">
+                        <li><strong>Machine Learning Pipeline:</strong> On-device recognition cross-referencing
+                            real-time schedules.</li>
+                        <li><strong>Hardware Integration:</strong> ESP32-controlled solenoid lock via BLE.</li>
+                        <li><strong>Firebase Sync:</strong> Real-time data synchronization.</li>
+                    </ul>
+                </div>
+                <div class="visual-content">
+                    <div class="video-container">
+                        <video controls poster="canva/9.jpg">
+                            <source src="assets/faceRecogFinal.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="tech-gallery">
+                        <div class="tech-item">
+                            <p>Walkthrough</p><img src="canva/10.jpg" alt="Facul-Track Walkthrough">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Final -->
+        <section id="contact" class="snap-section center-content">
+            <div class="text-center">
+                <div class="sketchy-box">
+                    <h1>LETS WORK TOGETHER!</h1>
+                </div>
+                <div class="contact-info">
+                    <h3>Allen Pesigan</h3>
+                    <p>Software and Backend Developer | n8n Automation Specialist</p>
+                </div>
+            </div>
+            <svg class="final-squiggle" viewBox="0 0 500 100">
+                <path d="M0,50 C100,0 200,100 300,50 S500,0 500,50" stroke="#1a4325" stroke-width="6" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </section>
+    </main>
+
+    <!-- Image Lightbox Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content-wrapper">
+            <img class="modal-content" id="full-image">
+            <div id="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

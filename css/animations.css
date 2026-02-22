@@ -1,0 +1,58 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes drawCircle {
+    from {
+        stroke-dashoffset: 1000;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes wiggle {
+
+    0%,
+    100% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+.snap-section.active .container {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.polaroid {
+    animation: wiggle 5s ease-in-out infinite;
+}
+
+.sketchy-circle {
+    /* We can use standard borders or SVG for more complex paths */
+    transition: all 0.5s ease;
+}
+
+/* Intersection Observer transitions */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
