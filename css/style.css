@@ -1,6 +1,6 @@
 :root {
     --bg-color: #f7f4ed;
-    --text-primary: #1a4325;
+    --text-primary: #1a5319;
     --accent-orange: #ff8c00;
     --accent-green: #2e7d32;
     --paper-texture: url('https://www.transparenttextures.com/patterns/crumpled-paper.png');
@@ -379,6 +379,22 @@ h3 {
 .contact-info {
     font-family: var(--font-hand);
     font-size: 1.8rem;
+}
+
+.contact-email {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-email a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    border-bottom: 2px dashed var(--accent-orange);
+    transition: opacity 0.3s ease;
+}
+
+.contact-email a:hover {
+    opacity: 0.8;
 }
 
 /* Lightbox/Zoomable */

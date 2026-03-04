@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Force scroll to top on reload
+    window.scrollTo(0, 0);
+
     // Loader logic
     const loader = document.getElementById('loader');
     window.addEventListener('load', () => {
