@@ -122,18 +122,15 @@ body {
 
 
 #portfolio-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    width: 100%;
 }
 
 .snap-section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    scroll-snap-align: start;
     padding: 4rem 2rem;
     position: relative;
     overflow: hidden;
@@ -382,6 +379,16 @@ h3 {
 .contact-info {
     font-family: var(--font-hand);
     font-size: 1.8rem;
+}
+
+/* Lightbox/Zoomable */
+.zoomable {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.zoomable:hover {
+    filter: brightness(1.1);
 }
 
 /* Mobile Responsive */

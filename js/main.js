@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loader = document.getElementById('loader');
     window.addEventListener('load', () => {
         setTimeout(() => {
-            loader.classList.add('fade-out');
+            if (loader) loader.classList.add('fade-out');
         }, 1000); // Small delay for effect
     });
 
@@ -48,23 +48,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     zoomableImgs.forEach(img => {
         img.onclick = function () {
-            modal.style.display = "block";
-            fullImg.src = this.src;
-            captionText.innerHTML = this.alt || "Portfolio View";
-            document.body.style.overflow = "hidden"; // Prevent scrolling while open
+            if (modal && fullImg && captionText) {
+                modal.style.display = "block";
+                fullImg.src = this.src;
+                captionText.innerHTML = this.alt || "Portfolio View";
+                document.body.style.overflow = "hidden"; // Prevent scrolling while open
+            }
         }
     });
 
-    closeModal.onclick = function () {
-        modal.style.display = "none";
-        document.body.style.overflow = "auto";
+    if (closeModal) {
+        closeModal.onclick = function () {
+            if (modal) modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
     }
 
     // Close on click outside image
-    modal.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-            document.body.style.overflow = "auto";
+    if (modal) {
+        modal.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
         }
     }
 });
